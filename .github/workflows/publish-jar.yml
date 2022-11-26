@@ -22,8 +22,7 @@ jobs:
       - name: Code Checks
         run: ./gradlew check
       - name: Publish package
-        uses: gradle/gradle-build-action@3fbe033aaae657f011f88f29be9e65ed26bd29ef
-        with:
-          arguments: publish
+        run: ./gradlew --debug publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
