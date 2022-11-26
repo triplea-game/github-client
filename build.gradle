@@ -38,7 +38,7 @@ publishing {
     publications {
         shadow(MavenPublication) { publication ->
             project.shadow.component(publication)
-            version project.version + "-all"
+            version project.version
             pom {
                 packaging 'jar'
             }
