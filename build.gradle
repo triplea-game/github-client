@@ -41,7 +41,7 @@ publishing {
     }
     publications {
         shadow(MavenPublication) {
-            from components.shadow
+            artifact shadowJar
             pom {
                 packaging 'jar'
             }
