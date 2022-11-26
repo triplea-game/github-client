@@ -1,0 +1,6 @@
+{
+  "repo" : "test",
+  "title" : "Test Issue",
+  "body" : "example content",
+  "labels" : [ "Error Report" ]
+}
