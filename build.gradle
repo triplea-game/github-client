@@ -25,7 +25,7 @@ repositories {
 }
 
 shadowJar {
-    archiveName = jar.archiveBaseName
+    classifier = ''
 }
 
 publishing {
@@ -41,8 +41,7 @@ publishing {
     }
     publications {
         shadow(MavenPublication) {
-            from components.java
-            artifact shadowJar
+            from components.shadow
             pom {
                 packaging 'jar'
             }
