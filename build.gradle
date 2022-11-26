@@ -24,6 +24,10 @@ repositories {
     mavenCentral()
 }
 
+shadowJar {
+    archiveFileName = jar.archiveName
+}
+
 publishing {
     repositories {
         maven {
